@@ -1,0 +1,142 @@
+body {
+	margin: 30;
+	font-family: "Roboto", sans-serif;
+	background-color: #f4511e;
+	color: #fff;
+}
+/*
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 300px 300px;
+	grid-template-rows: 300px 300px;
+	grid-gap: 20px;
+}
+.grid div {
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+.grid img {
+	display: flex;
+
+}  */
+html {
+scroll-behavior: smooth;
+font-size: 	100%;
+}
+
+	#header {
+ text-align: center;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+
+}
+
+a {
+	color: aliceblue;
+	padding: 12px;
+	font-size: 25px;
+    font-weight: bold;
+}
+ a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.box {
+	background-color: #604a43;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 100%;
+}
+.box:nth-child(even) {
+	background-color: #f5c9bb;
+	color: #000;
+}
+.box img {
+	width: 250px;
+}
+.box p {
+	font-family: "Roboto", sans-serif;
+
+}
+.box h1 {
+	font-size: 25px;
+}
+
+.data_price {
+	font-size: 15px;
+	color: #f4511e;
+}
+.data_discount {
+	font-size: 18px;
+	color: red;
+}
+
+.wrapper {
+    padding: 3px;
+}
+
+.onSale .data_price {
+	text-decoration: line-through;
+}
+.onSale .data_discount {
+	font-size: 1.2rem;
+	color: green;
+}
+.discount {
+	text-decoration: line-through;
+	color: red;
+}
+main>section {
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Responsive code */
+}
+section>h1 {
+	grid-column: 1/-1;
+	}
+
+	@media screen and (max-width: 400px){
+		#image.wrapper{
+			width: 25%;
+		}
+		p, h4 {
+		font-size: 1.5rem;
+		line-height: 1.5;
+
+	}
+         img {
+	width: 400px;
+		}
+}
+
+
+/* Modal */
+
+.hide {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  background-color: #fefefe;
+  color: #f4511e;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
+}
